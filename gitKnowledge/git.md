@@ -99,55 +99,82 @@ https协议提交代码时需要用户名和密码
 
 #### 添加远程仓库
 > git remote add origin 仓库的地址     添加远程仓库地址
+
 > git remote –v    查看关联的远程仓库
+
 #### 本地项目推送远程仓库
 > git init  （初始化本地仓库）
+
 > git add .  （工作区提交暂存区）
+
 > git commit -m “描述” （提交仓库）
+
 > git remote add origin github仓库的地址  （远程仓库地址）
+
 > git remote -v  （查看关联的远程仓库）
+
 > git push origin master  （推送到远程仓库）
+
 **注：远程仓库和本地文件必须一致否则推送失败**
 #### 克隆远程仓库
-> git clone  仓库的地址 
+> git clone  仓库的地址
+
 > git pull origin master  --allow-unrelated-histories 远程代码拉取到本地工作区（自动合并） 
+
 > git push -u origin master   提交到远程仓库
+
 #### 远程仓库克隆到本地
 > git clone  仓库的地址
+
 > git add .
+
 > git commit -m “描述”
+
 > git pull origin master --allow-unrelated-histories  远程代码拉取到本地工作区
+
 > git push -u origin master  提交到远程仓库
+
 ### 分支管理
 > **为什么使用分支？**
 > 可以创建一个属于自己的分支，别人看不见，在自己的分支上进行开发，等开发完毕，还继续在原来的分支上合并。
 
 #### 分支的基本操作
 > 创建分支 （git branch 分支名）
+
 > 查看当前分支 （git branch）
+
 > 切换分支（git checkout 分支名）
+
 > 分支的合并 （git merge 分支名）
+
 > 分支的删除（git branch -d 分支名）
 
+
 > git branch -r  查看远程所有分支
+
 > git branch -a   查看本地和远程所有分支
+
 > git checkout -b 分支名  创建并切换到该分支
+
 > git branch -d 分支名  删除本地分支
+
 > git push origin -d 分支名  删除远程分支
 
+
 > **如何解决代码冲突？**
-1.冲突的代码
-![冲突的代码](./img/冲突的代码.png)
+> 1.冲突的代码
+> ![冲突的代码](./img/冲突的代码.png)
 > 手动解决冲突文件，再次commit，然后push
 
+
 ### git中一些选项解释
-> -d  --delete：删除 
- -D  --delete --force的快捷键 
--f  --force：强制 
--m  --move：移动或重命名 
--M  --move --force的快捷键 
--r  --remote：远程 
--a  --all：所有
+> -d  --delete：删除
+> -D  --delete --force的快捷键
+> -f  --force：强制
+> -m  --move：移动或重命名
+> -M  --move --force的快捷键
+> -r  --remote：远程
+> -a  --all：所有
 
 |命令  |  说明  |
 --- | ---
