@@ -10,6 +10,8 @@
 
 ![img/git报错](./img/git报错.png)
 
+![img/git报错2](./img/git报错2.jpg)
+
 ### git和svn的区别:
 1. git是分布式的，svn是集中式的。(最核心);
 2. git是每个历史版本都存储完整的文件，便于恢复;
